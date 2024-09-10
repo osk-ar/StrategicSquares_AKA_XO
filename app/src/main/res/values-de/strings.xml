@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StrategicSquares</string>
+    <string name="play_offline">Offline spielen</string>
+    <string name="p_v_p">P V P</string>
+    <string name="p_v_e">P V E</string>
+    <string name="play_online">Online spielen</string>
+    <string name="competitive">🏆        Wettbewerbsfähig        🏆</string>
+    <string name="private_room">Privater Raum</string>
+    <string name="settings">Einstellungen</string>
+    <string name="profile">profiel</string>
+    <string name="coming_soon">Bald verfügbar…</string>
+    <string name="xo_logo">XO-Logo</string>
+    <string name="search_icon">Suchsymbol</string>
+    <string name="searching_for_opponent">Suche nach Gegner</string>
+    <string name="enemy_image">Gegnerbild</string>
+    <string name="player_image">Spielerbild</string>
+    <string name="back_button">Zurück-Taste</string>
+    <string name="timer_icon">Timer-Symbol</string>
+    <string name="ai">KI</string>
+    <string name="click_on_player_1_name_to_edit">Klicken Sie auf den Namen von Spieler 1, um zu bearbeiten…</string>
+    <string name="rule_1">1- Zwei Spieler wechseln sich ab. Der rote Spieler ist "X" und der andere ist "O".</string>
+    <string name="rules">Regeln</string>
+    <string name="rule_2">2- Bei jedem Zug markiert ein Spieler eines der leeren Felder mit seinem Symbol ("X" oder "O").</string>
+    <string name="rule_3">3- Ein Spieler gewinnt, wenn er es schafft, drei seiner Symbole in einer Reihe zu platzieren. Die Reihe kann horizontal, vertikal oder diagonal sein.</string>
+    <string name="rule_4">4- Wenn alle 9 Felder gefüllt sind und kein Spieler drei in einer Reihe hat, endet das Spiel unentschieden.</string>
+    <string name="levels">Stufen</string>
+    <string name="start">Begin</string>
+    <string name="player_1">Spieler 1</string>
+    <string name="player_2">Spieler 2</string>
+    <string name="click_on_a_player_name_to_edit">Klicken Sie auf einen Spielernamen, um zu bearbeiten…</string>
+    <string name="languages">Sprachen</string>
+    <string name="sounds">Geräusche</string>
+    <string name="background_sound">Hintergrundgeräusch</string>
+    <string name="clicking_sound">Klickgeräusch</string>
+    <string name="theme">Thema</string>
+    <string name="create_a_new_account">Ein neues Konto erstellen</string>
+    <string name="username">Benutzername</string>
+    <string name="your_name">Dein Name</string>
+    <string name="email">E-Mail</string>
+    <string name="password">Passwort</string>
+    <string name="your_password">dein Passwort</string>
+    <string name="register">Registrieren</string>
+    <string name="already_have_an_account">Hast du schon ein Konto?</string>
+    <string name="or_play_as_a_guest">oder als Gast spielen</string>
+    <string name="create_new_account">Neues Konto erstellen</string>
+    <string name="login">Anmelden</string>
+    <string name="welcome_back">Willkommen zurück</string>
+    <string name="points">Punkte</string>
+    <string name="logout">Abmelden</string>
+    <string name="light">Hell</string>
+    <string name="dark">Dunkel</string>
+    <string name="system">System</string>
+    <string name="waiting_for_other_player">Warten auf den anderen Spieler</string>
+
+
+</resources>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/pr_back_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#00000000"
+        android:contentDescription="@string/back_button"
+        android:scaleType="centerInside"
+        android:src="@drawable/back1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/back_button_tint" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/P_card_pr"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:outlineSpotShadowColor="@color/card_shadow"
+        app:cardBackgroundColor="@color/card_bg"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="24dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pr_back_btn">
+
+        <ImageView
+            android:id="@+id/P_img_pr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:contentDescription="@string/player_image"
+            android:padding="16dp"
+            android:src="@drawable/profile_blue" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/enemy_card_pr"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="24dp"
+        android:outlineSpotShadowColor="@color/card_shadow"
+        app:cardBackgroundColor="@color/card_bg"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="24dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/P_card_pr">
+
+        <ImageView
+            android:id="@+id/enemy_img_pr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:contentDescription="@string/enemy_image"
+            android:padding="16dp"
+            android:src="@drawable/profile_red" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/P_name_pr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:fontFamily="@font/sebino"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/player_1"
+        android:textAlignment="center"
+        android:textColor="@color/main_text_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/P_card_pr"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/P_card_pr"
+        app:layout_constraintTop_toBottomOf="@+id/P_card_pr" />
+
+    <TextView
+        android:id="@+id/enemy_name_pr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:fontFamily="@font/sebino"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="..."
+        android:textAlignment="center"
+        android:textColor="@color/main_text_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/enemy_card_pr"
+        app:layout_constraintStart_toStartOf="@+id/enemy_card_pr"
+        app:layout_constraintTop_toBottomOf="@+id/enemy_card_pr" />
+
+    <FrameLayout
+        android:id="@+id/pr_search_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/P_name_pr">
+
+        <FrameLayout
+            android:id="@+id/pr_animation_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/search_circle_framelayout_pr"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_shape"
+            android:padding="36dp">
+
+            <ImageView
+                android:id="@+id/imageView999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/search_icon"
+                app:srcCompat="@drawable/search"
+                app:tint="@color/search_icon_tint" />
+        </FrameLayout>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/loading_pr_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:gravity="start"
+            android:text="Room Code: "
+            android:textColor="@color/main_text_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/pr_roomcode_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="XKA512"
+            android:textColor="@color/main_text_color"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/pr_copy_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="end"
+            android:layout_weight="0"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="16dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/copy"
+            app:tint="@color/main_text_color" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/loading_pr_card"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="48dp"
+        android:outlineSpotShadowColor="@color/card_shadow"
+        app:cardBackgroundColor="@color/card_bg"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/search_tv_pr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/waiting_for_other_player"
+            android:textAlignment="center"
+            android:textColor="@color/hint_text_color"
+            android:textSize="20sp" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

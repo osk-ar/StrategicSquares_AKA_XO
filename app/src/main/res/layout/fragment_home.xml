@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/waveRootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".ui.HomeFragment">
+
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:outlineSpotShadowColor="@color/card_shadow"
+            app:cardBackgroundColor="@color/card_bg"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="24dp"
+            app:cardPreventCornerOverlap="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="111dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/xo_logo"
+                android:src="@drawable/xo_logo" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/settings_home_btn"
+            app:layout_constraintEnd_toEndOf="@+id/cardView"
+            app:layout_constraintStart_toStartOf="@+id/cardView"
+            app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/play_offline"
+                android:textColor="@color/main_text_color"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/sebino"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <carbon.widget.Button
+                android:id="@+id/pvp_home_btn"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/button_background"
+                android:text="@string/p_v_p"
+                android:textColor="@color/main_text_color"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:carbon_cornerRadius="16dp"
+                app:carbon_rippleColor="@color/ripple_color"
+                app:carbon_rippleStyle="background"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <carbon.widget.Button
+                android:id="@+id/pve_home_btn"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_background"
+                android:text="@string/p_v_e"
+                android:textColor="@color/main_text_color"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:carbon_cornerRadius="16dp"
+                app:carbon_rippleColor="@color/ripple_color"
+                app:carbon_rippleStyle="background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="@string/play_online"
+                android:textColor="@color/main_text_color"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/sebino"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pvp_home_btn" />
+
+            <carbon.widget.Button
+                android:id="@+id/competitive_home_btn"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_background"
+                android:text="@string/competitive"
+                android:textColor="@color/main_text_color"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                app:carbon_cornerRadius="16dp"
+                app:carbon_rippleColor="@color/ripple_color"
+                app:carbon_rippleStyle="background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <carbon.widget.Button
+                android:id="@+id/privateRoom_home_btn"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_background"
+                android:text="@string/private_room"
+                android:textColor="@color/main_text_color"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                app:carbon_cornerRadius="16dp"
+                app:carbon_rippleColor="@color/ripple_color"
+                app:carbon_rippleStyle="background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/competitive_home_btn" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <carbon.widget.Button
+            android:id="@+id/settings_home_btn"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/button_background"
+            android:text="@string/settings"
+            android:textColor="@color/main_text_color"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:carbon_cornerRadius="16dp"
+            app:carbon_rippleColor="@color/ripple_color"
+            app:carbon_rippleStyle="background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/profile_home_btn" />
+
+        <carbon.widget.Button
+            android:id="@+id/profile_home_btn"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="64dp"
+            android:background="@drawable/button_background"
+            android:text="@string/profile"
+            android:textColor="@color/main_text_color"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:carbon_cornerRadius="16dp"
+            app:carbon_rippleColor="@color/ripple_color"
+            app:carbon_rippleStyle="background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

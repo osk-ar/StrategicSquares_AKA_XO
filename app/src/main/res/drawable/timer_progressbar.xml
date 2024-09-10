@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/timer_progressbar"/>
+            <corners android:radius="300dp"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="300dp"/>
+                <gradient android:startColor="#67EAAB" android:endColor="#03E5D8"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

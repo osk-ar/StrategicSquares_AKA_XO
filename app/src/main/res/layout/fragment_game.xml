@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/P_card_game"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:outlineSpotShadowColor="@color/card_shadow"
+        app:cardBackgroundColor="@color/card_bg"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="32dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/P_img_game"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:contentDescription="@string/player_image"
+            android:padding="16dp"
+            android:src="@drawable/profile_blue" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/enemy_card_game"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="24dp"
+        android:outlineSpotShadowColor="@color/card_shadow"
+        app:cardBackgroundColor="@color/card_bg"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="32dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/P_card_game">
+
+        <ImageView
+            android:id="@+id/enemy_img_game"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:contentDescription="@string/enemy_image"
+            android:padding="16dp"
+            android:src="@drawable/profile_red" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/game_player_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:fontFamily="@font/sebino"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Zeiad"
+        android:textAlignment="center"
+        android:textColor="@color/main_text_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/P_card_game"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/P_card_game"
+        app:layout_constraintTop_toBottomOf="@+id/P_card_game" />
+
+    <TextView
+        android:id="@+id/game_enemy_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:fontFamily="@font/sebino"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Mohammed"
+        android:textAlignment="center"
+        android:textColor="@color/main_text_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/enemy_card_game"
+        app:layout_constraintStart_toStartOf="@+id/enemy_card_game"
+        app:layout_constraintTop_toBottomOf="@+id/enemy_card_game" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:outlineSpotShadowColor="@color/card_shadow"
+        app:cardBackgroundColor="@color/card_bg"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_player_name">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/timer_icon"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:contentDescription="@string/timer_icon"
+                android:padding="12dp"
+                android:src="@drawable/timer"
+                app:tint="@color/timer_icon_tint" />
+
+            <ProgressBar
+                android:id="@+id/game_timer_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="24dp"
+                android:layout_weight="1"
+                android:indeterminateOnly="false"
+                android:max="20000"
+                android:min="0"
+                android:minHeight="12dip"
+                android:progressDrawable="@drawable/timer_progressbar" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/game_player_turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/sebino"
+        android:text="Zeiad's Turn"
+        android:textColor="@color/secondary_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <com.example.tictactoe.ui.SquareFrameLayout
+        android:id="@+id/squareFrameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/xo_grid"
+        android:backgroundTint="@color/xo_grid_tint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:fontFamily="@font/sebino"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textAlignment="center"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="48sp" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:fontFamily="@font/sebino"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textAlignment="center"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="48sp" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:fontFamily="@font/sebino"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textAlignment="center"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="48sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:fontFamily="@font/sebino"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textAlignment="center"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="48sp" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:fontFamily="@font/sebino"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textAlignment="center"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="48sp" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:fontFamily="@font/sebino"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textAlignment="center"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="48sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:fontFamily="@font/sebino"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textAlignment="center"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="48sp" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:fontFamily="@font/sebino"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textAlignment="center"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="48sp" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:fontFamily="@font/sebino"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textAlignment="center"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="48sp" />
+            </TableRow>
+
+        </TableLayout>
+    </com.example.tictactoe.ui.SquareFrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

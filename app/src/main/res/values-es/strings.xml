@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StrategicSquares</string>
+    <string name="play_offline">Jugar sin conexión</string>
+    <string name="p_v_p">P V P</string>
+    <string name="p_v_e">P V E</string>
+    <string name="play_online">Jugar en línea</string>
+    <string name="competitive">🏆        Competitivo        🏆</string>
+    <string name="private_room">Sala privada</string>
+    <string name="settings">Configuración</string>
+    <string name="profile">perfil</string>
+    <string name="coming_soon">Próximamente…</string>
+    <string name="xo_logo">Logo XO</string>
+    <string name="search_icon">Ícono de búsqueda</string>
+    <string name="searching_for_opponent">Buscando oponente</string>
+    <string name="enemy_image">Imagen del enemigo</string>
+    <string name="player_image">Imagen del jugador</string>
+    <string name="back_button">Botón de regreso</string>
+    <string name="timer_icon">Ícono del temporizador</string>
+    <string name="ai">IA</string>
+    <string name="click_on_player_1_name_to_edit">Haz clic en el nombre del jugador 1 para editar…</string>
+    <string name="rule_1">1- Dos jugadores se turnan. El jugador rojo es "X" y el otro es "O".</string>
+    <string name="rules">Reglas</string>
+    <string name="rule_2">2- En cada turno, un jugador marca uno de los cuadrados vacíos con su símbolo ("X" o "O").</string>
+    <string name="rule_3">3- Un jugador gana si logra colocar tres de sus símbolos en fila. La fila puede ser horizontal, vertical o diagonal.</string>
+    <string name="rule_4">4- Si los 9 cuadrados están llenos y ningún jugador tiene tres en fila, el juego termina en empate.</string>
+    <string name="levels">Niveles</string>
+    <string name="start">Comenzar</string>
+    <string name="player_1">Jugador 1</string>
+    <string name="player_2">Jugador 2</string>
+    <string name="click_on_a_player_name_to_edit">Haz clic en el nombre de un jugador para editar…</string>
+    <string name="languages">Idiomas</string>
+    <string name="sounds">Sonidos</string>
+    <string name="background_sound">Sonido de fondo</string>
+    <string name="clicking_sound">Sonido de clic</string>
+    <string name="theme">Tema</string>
+    <string name="create_a_new_account">Crear una nueva cuenta</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="your_name">tu nombre</string>
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="your_password">tu contraseña</string>
+    <string name="register">Registrarse</string>
+    <string name="already_have_an_account">¿Ya tienes una cuenta?</string>
+    <string name="or_play_as_a_guest">o jugar como invitado</string>
+    <string name="create_new_account">Crear nueva cuenta</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="welcome_back">Bienvenido de nuevo</string>
+    <string name="points">Puntos</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="light">Claro</string>
+    <string name="dark">Oscuro</string>
+    <string name="system">Sistema</string>
+    <string name="waiting_for_other_player">Esperando al otro jugador</string>
+
+
+</resources>

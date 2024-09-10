@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">StrategicSquares</string>
+    <string name="play_offline">Play Offline</string>
+    <string name="p_v_p">P V P</string>
+    <string name="p_v_e">P V E</string>
+    <string name="play_online">Play Online</string>
+    <string name="competitive">🏆        Competitive        🏆</string>
+    <string name="private_room">Private Room</string>
+    <string name="settings">Settings</string>
+    <string name="profile">Profile</string>
+    <string name="coming_soon">Coming Soon…</string>
+    <string name="xo_logo">XO Logo</string>
+    <string name="search_icon">Search Icon</string>
+    <string name="searching_for_opponent">Searching for opponent</string>
+    <string name="enemy_image">Enemy Image</string>
+    <string name="player_image">Player Image</string>
+    <string name="back_button">Back Button</string>
+    <string name="timer_icon">Timer Icon</string>
+    <string name="ai">AI</string>
+    <string name="click_on_player_1_name_to_edit">Click on player 1 name to edit…</string>
+    <string name="rule_1">1- Two players take turns. Red player is \"X\" and the other is \"O\".</string>
+    <string name="rules">Rules</string>
+    <string name="rule_2">2- On each turn, a player marks one of the empty squares with their symbol (\"X\" or \"O\").</string>
+    <string name="rule_3">3- A player wins if they successfully place three of their symbols in a row. The row can be horizontal, vertical or diagonal.</string>
+    <string name="rule_4">4- If all 9 squares are filled and no player has three in a row, the game ends in a draw.</string>
+    <string name="levels">Levels</string>
+    <string name="start">Start</string>
+    <string name="player_1">Player 1</string>
+    <string name="player_2">Player 2</string>
+    <string name="click_on_a_player_name_to_edit">Click on a player name to edit…</string>
+    <string name="languages">Languages</string>
+    <string name="sounds">Sounds</string>
+    <string name="background_sound">Background Sound</string>
+    <string name="clicking_sound">Clicking Sound</string>
+    <string name="theme">Theme</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="username">Username</string>
+    <string name="your_name">your name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="your_password">your password</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account">Already have an account</string>
+    <string name="or_play_as_a_guest">or play as a guest</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="login">Login</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="points">Points</string>
+    <string name="logout">Logout</string>
+    <string name="light">light</string>
+    <string name="dark">dark</string>
+    <string name="system">system</string>
+    <string name="waiting_for_other_player">Waiting for other player</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

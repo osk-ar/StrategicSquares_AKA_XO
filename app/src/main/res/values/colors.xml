@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    // general colors
+    <color name="activity_bg">#FFFFFF</color>
+    <color name="card_bg">#FFFEFC</color>
+    <color name="card_shadow">#BF000000</color>
+    <color name="back_button_tint">#000000</color>
+
+    <color name="main_text_color">#000000</color>
+    <color name="secondary_text_color">#BF000000</color>
+    <color name="hint_text_color">#A6A6A6</color>
+    <color name="text_underline_color">#FFFFFF</color>
+
+    <color name="stroke_off_color">#000000</color>
+    <color name="stroke_on_color">#3EC5F3</color>
+    <color name="ripple_color">#33C2C2C2</color>
+    <color name="soft_ripple_color">#1AC2C2C2</color>
+
+    // game fragment
+    <color name="timer_icon_tint">#434343</color>
+    <color name="xo_grid_tint">#D9D9D9</color>
+    <color name="timer_progressbar">#CBCBCB</color>
+
+    // comp fragment
+    <color name="search_icon_tint">#000000</color>
+
+    // private_room fragment
+    <color name="selection_card_bg">#F5F4F2</color>
+
+    // splash screen
+    <color name="splash_tint">#1F1F1D</color>
+    <color name="splash_bg">#F5F4F2</color>
+</resources>

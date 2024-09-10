@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SettingFragment">
+
+
+    <ImageButton
+        android:id="@+id/setting_back_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#00000000"
+        android:contentDescription="@string/back_button"
+        android:scaleType="centerInside"
+        android:src="@drawable/back1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/back_button_tint" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/setting_cardView"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:outlineSpotShadowColor="@color/card_shadow"
+        app:cardBackgroundColor="@color/card_bg"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="24dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_back_btn">
+
+        <TextView
+            android:id="@+id/settings_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/sebino"
+            android:text="@string/settings"
+            android:textColor="@color/main_text_color"
+            android:textSize="48sp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/sebino"
+        android:text="@string/languages"
+        android:textColor="@color/main_text_color"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_cardView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/language_recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/sebino"
+        android:text="@string/sounds"
+        android:textColor="@color/main_text_color"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/language_recyclerView" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/background_sound_card"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:cardBackgroundColor="@color/card_bg"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView111">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/background_sound"
+            android:textColor="@color/main_text_color"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <carbon.widget.Button
+        android:id="@+id/background_sound_on_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/button_background"
+        android:text="|"
+        android:textColor="@color/secondary_text_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:carbon_cornerRadius="16dp"
+        app:carbon_rippleColor="@color/ripple_color"
+        app:carbon_rippleStyle="background"
+        app:carbon_stroke="@color/stroke_off_color"
+        app:carbon_strokeWidth="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/background_sound_card"
+        app:layout_constraintEnd_toStartOf="@+id/background_sound_off_btn"
+        app:layout_constraintStart_toEndOf="@+id/background_sound_card"
+        app:layout_constraintTop_toTopOf="@+id/background_sound_card" />
+
+    <carbon.widget.Button
+        android:id="@+id/background_sound_off_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_background"
+        android:text="O"
+        android:textColor="@color/secondary_text_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:carbon_cornerRadius="16dp"
+        app:carbon_rippleColor="@color/ripple_color"
+        app:carbon_rippleStyle="background"
+        app:carbon_stroke="@color/stroke_off_color"
+        app:carbon_strokeWidth="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/background_sound_on_btn"
+        app:layout_constraintEnd_toEndOf="@+id/setting_cardView"
+        app:layout_constraintTop_toTopOf="@+id/background_sound_on_btn" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/clicking_sound_card"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/card_bg"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background_sound_card">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/clicking_sound"
+            android:textColor="@color/main_text_color"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <carbon.widget.Button
+        android:id="@+id/clicking_sound_on_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/button_background"
+        android:text="|"
+        android:textColor="@color/secondary_text_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:carbon_cornerRadius="16dp"
+        app:carbon_rippleColor="@color/ripple_color"
+        app:carbon_rippleStyle="background"
+        app:carbon_stroke="@color/stroke_off_color"
+        app:carbon_strokeWidth="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/clicking_sound_card"
+        app:layout_constraintEnd_toStartOf="@+id/background_sound_off_btn"
+        app:layout_constraintStart_toEndOf="@+id/clicking_sound_card"
+        app:layout_constraintTop_toTopOf="@+id/clicking_sound_card" />
+
+    <carbon.widget.Button
+        android:id="@+id/clicking_sound_off_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_background"
+        android:text="O"
+        android:textColor="@color/secondary_text_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:carbon_cornerRadius="16dp"
+        app:carbon_rippleColor="@color/ripple_color"
+        app:carbon_rippleStyle="background"
+        app:carbon_stroke="@color/stroke_off_color"
+        app:carbon_strokeWidth="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/clicking_sound_on_btn"
+        app:layout_constraintEnd_toEndOf="@+id/setting_cardView"
+        app:layout_constraintTop_toTopOf="@+id/clicking_sound_on_btn" />
+
+    <TextView
+        android:id="@+id/textView133"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/sebino"
+        android:text="@string/theme"
+        android:textColor="@color/main_text_color"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clicking_sound_card" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/theme_recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView133" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

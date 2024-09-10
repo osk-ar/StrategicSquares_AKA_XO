@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StrategicSquares</string>
+    <string name="play_offline">オフラインでプレイ</string>
+    <string name="p_v_p">P V P</string>
+    <string name="p_v_e">P V E</string>
+    <string name="play_online">オンラインでプレイ</string>
+    <string name="competitive">🏆        競争        🏆</string>
+    <string name="private_room">プライベートルーム</string>
+    <string name="settings">設定</string>
+    <string name="profile">プロフィール</string>
+    <string name="coming_soon">近日公開…</string>
+    <string name="xo_logo">XO ロゴ</string>
+    <string name="search_icon">検索アイコン</string>
+    <string name="searching_for_opponent">対戦相手を検索中</string>
+    <string name="enemy_image">敵の画像</string>
+    <string name="player_image">プレイヤー画像</string>
+    <string name="back_button">戻るボタン</string>
+    <string name="timer_icon">タイマーアイコン</string>
+    <string name="ai">AI</string>
+    <string name="click_on_player_1_name_to_edit">プレイヤー1の名前をクリックして編集…</string>
+    <string name="rule_1">1– 2人のプレイヤーが交互にプレイします。赤いプレイヤーが「X」、もう一人が「O」です。</string>
+    <string name="rules">ルール</string>
+    <string name="rule_2">2- 各ターンで、プレイヤーは空いているマスの1つに自分のシンボル（「X」または「O」）をマークします。</string>
+    <string name="rule_3">3- プレイヤーは、自分のシンボルを3つ連続して配置できれば勝ちます。連続は水平、垂直、または。</string>
+    <string name="rule_4">4- すべての9つのマスが埋まり、いずれのプレイヤーも3つ連続していなす。</string>
+    <string name="levels">レベル</string>
+    <string name="start">開始</string>
+    <string name="player_1">プレイヤー1</string>
+    <string name="player_2">プレイヤー2</string>
+    <string name="click_on_a_player_name_to_edit">プレイヤーの名前をクリックして編集…</string>
+    <string name="languages">言語</string>
+    <string name="sounds">サウンド</string>
+    <string name="background_sound">バックグランド</string>
+    <string name="clicking_sound">クリック音</string>
+    <string name="theme">テーマ</string>
+    <string name="create_a_new_account">新しいアカウントを作成</string>
+    <string name="username">ユーザー名</string>
+    <string name="your_name">あなたの名前</string>
+    <string name="email">メールアドレス</string>
+    <string name="password">パスワード</string>
+    <string name="your_password">あなたのパスワード</string>
+    <string name="register">登録</string>
+    <string name="already_have_an_account">すでにアカウントをお持ちですか</string>
+    <string name="or_play_as_a_guest">ゲストとしてプレイする</string>
+    <string name="create_new_account">新しいアカウントを作成する</string>
+    <string name="login">ログイン</string>
+    <string name="welcome_back">お帰りなさい</string>
+    <string name="points">ポイント</string>
+    <string name="logout">ログアウト</string>
+    <string name="light">ライト</string>
+    <string name="dark">ダーク</string>
+    <string name="system">システム</string>
+    <string name="waiting_for_other_player">他のプレイヤーを待っています</string>
+
+
+</resources>

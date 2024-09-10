@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StrategicSquares</string>
+    <string name="play_offline">اللعب دون اتصال</string>
+    <string name="p_v_p">لاعب ضد لاعب</string>
+    <string name="p_v_e">لاعب ضد البيئة</string>
+    <string name="play_online">اللعب عبر الإنترنت</string>
+    <string name="competitive">🏆        تنافسي        🏆</string>
+    <string name="private_room">غرفة خاصة</string>
+    <string name="settings">الإعدادات</string>
+    <string name="profile">الحساب</string>
+    <string name="coming_soon">قريبًا…</string>
+    <string name="xo_logo">شعار اللعبة</string>
+    <string name="search_icon">أيقونة البحث</string>
+    <string name="searching_for_opponent">البحث عن منافس</string>
+    <string name="enemy_image">صورة العدو</string>
+    <string name="player_image">صورة اللاعب</string>
+    <string name="back_button">زر الرجوع</string>
+    <string name="timer_icon">أيقونة المؤقت</string>
+    <string name="ai">الذكاء الاصطناعي</string>
+    <string name="click_on_player_1_name_to_edit">انقر على اسم اللاعب 1 للتحرير…</string>
+    <string name="rule_1">1- يتناوب لاعبان. اللاعب الأحمر هو "X" والآخر هو "O".</string>
+    <string name="rules">القواعد</string>
+    <string name="rule_2">2- في كل دور، يضع اللاعب رمزه ("X" أو "O") على أحد المربعات الفارغة.</string>
+    <string name="rule_3">3- يفوز اللاعب إذا وضع ثلاثة من رموزه في صف واحد. يمكن أن يكون الصف أفقيًا أو عموديًا أو قطريًا.</string>
+    <string name="rule_4">4- إذا امتلأت جميع المربعات التسعة ولم يتمكن أي لاعب من تحقيق ثلاثة في صف واحد، تنتهي اللعبة بالتعادل.</string>
+    <string name="levels">المستويات</string>
+    <string name="start">ابدأ</string>
+    <string name="player_1">اللاعب 1</string>
+    <string name="player_2">اللاعب 2</string>
+    <string name="click_on_a_player_name_to_edit">انقر على اسم اللاعب للتحرير…</string>
+    <string name="languages">اللغات</string>
+    <string name="sounds">الأصوات</string>
+    <string name="background_sound">الصوت الخلفي</string>
+    <string name="clicking_sound">صوت النقر</string>
+    <string name="theme">السمة</string>
+    <string name="create_a_new_account">إنشاء حساب جديد</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="your_name">اسمك</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="your_password">كلمتك السرية</string>
+    <string name="register">تسجيل</string>
+    <string name="already_have_an_account">لديك حساب بالفعل</string>
+    <string name="or_play_as_a_guest">أو اللعب كضيف</string>
+    <string name="create_new_account">إنشاء حساب جديد</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="welcome_back">مرحبًا بعودتك</string>
+    <string name="points">النقاط</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="light">فاتح</string>
+    <string name="dark">داكن</string>
+    <string name="system">النظام</string>
+    <string name="waiting_for_other_player">في انتظار اللاعب الآخر</string>
+
+
+</resources>
